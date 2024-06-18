@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-live": {
+    "basic-component": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-live",
+            "outputPath": "dist/basic-component",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-live:build:production"
+              "buildTarget": "basic-component:build:production"
             },
             "development": {
-              "buildTarget": "angular-live:build:development"
+              "buildTarget": "basic-component:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -105,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b6595e17-26b2-40cd-af1a-065a9989fb63"
   }
 }
